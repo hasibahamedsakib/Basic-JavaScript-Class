@@ -46,20 +46,10 @@ const myFunction = (x = 10, y = 20) => {
 // console.log(myFunction());
 
 // optional chaining
-const object = {
-  name: {
-    firstName: "Mr",
-    lastNames: "Rahim",
-  },
-  age: 30,
-  profetion: "Teacher",
-};
 
 // console.log(object?.name?.lastNames);
 
 //  max, ceil, floor, abs, round, random
-
-//  map, forEach, filter, find
 
 // let number = [10, 20, 30, 40, 50];
 // let sum = 0;
@@ -68,3 +58,66 @@ const object = {
 //   // console.log(i);
 // });
 // console.log(sum);
+
+// location API => browser api.
+
+// map, forEach, filter, find => es6 array method;
+
+// for (let i = 0; i <= number.length - 1; i++) {
+//   console.log(number[i]);
+// };
+// let sum = 0;
+// number.map((element) => {
+//   sum = sum + element;
+// });
+// console.log(sum);
+const object = {
+  name: "Mr rahim",
+  age: 30,
+  profetion: "Teacher",
+};
+
+// const [array1, array2, array3] = Object.entries(object);
+// console.log(array1);
+// console.log(array2);
+// console.log(array3);
+
+// map method
+// array1.map((name) => {
+//   console.log(name);
+// });
+// console.log(Object.entries(object));
+
+// forEach method
+// let number = [10, 20, 30, 40, 50];
+// number.forEach((number) => {
+//   console.log(number * 2);
+// });
+// console.log(result);
+
+// filter
+let number = [10, 20, 31, 40, 59, 40, 40];
+
+// for (let x = 0; x <= number.length - 1; x++) {
+//   let element = number[x];
+
+//   if (element % 2 !== 0) {
+//     let index = number.indexOf(element);
+//     number.splice(index, 1);
+//   }
+// }
+// console.log(number);
+
+// Filter method
+// let filter = number.filter((element) => {
+//   return element == 40;
+// });
+
+// console.log(filter);
+
+// find method
+let find = number.find((element) => {
+  return element == 30;
+});
+
+console.log(find);
