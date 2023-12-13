@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline text-red-500 text-center mb-5">
+      Total : <span id="display">00</span>
+    </h1>
+    <div>
+      <div class="flex items-center justify-center gap-5">
+        <input
+          placeholder="enter your number"
+          type="number"
+          name="number1"
+          id="input1"
+          class="w-[200px] h-[60px] border-2 border-red-500 placeholder:text-red-300 pl-[11px] focus:border-red-500 focus:outline-red-500 text-red-600"
+        />
+        <input
+          placeholder="operator"
+          type="text"
+          id="operator"
+          class="w-[50px] h-[50px] border-2 border-red-500 text-red-600 text-center cursor-pointer placeholder:text-red-300 focus:border-red-500 focus:outline-red-500"
+        />
+        <input
+          placeholder="enter your number"
+          type="number"
+          name="number2"
+          id="input2"
+          class="w-[200px] h-[60px] border-2 border-red-500 placeholder:text-red-300 pl-[11px] focus:border-red-500 focus:outline-red-500 text-red-600"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          id="button"
+          class="w-[100px] h-[50px] border-2 border-red-500 bg-red-400 text-white cursor-pointer"
+        />
+      </div>
+    </div>
+    <script src="./dom.js"></script>
+  </body>
+</html>
