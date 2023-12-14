@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind play cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Personal Bank</title>
+  </head>
+  <body>
+    <div class="bg-slate-600 flex items-center justify-center h-screen">
+      <div>
+        <h1 class="py-2 text-center font-semibold text-white text-4xl">
+          Welcome to Our Personal Bank
+        </h1>
+        <h1 class="pb-6 text-center font-semibold text-white text-2xl">
+          Total Amount : <span id="display">0</span>
+        </h1>
+        <h1 class="pb-6 text-center font-semibold text-white text-2xl">
+          Total charge : <span id="charge">0</span> tk
+        </h1>
+        <div>
+          <div class="flex items-center justify-center gap-5">
+            <div>
+              <input
+                placeholder="Enter your Deposit Amount"
+                type="number"
+                name="number1"
+                id="deposit"
+                class="w-[200px] h-[60px] border-2 border-red-500 placeholder:text-red-300 pl-[11px] focus:border-red-500 focus:outline-red-500 text-red-600"
+              />
+              <input
+                type="submit"
+                value="Deposit"
+                id="depositBtn"
+                class="w-[100px] h-[50px] border-2 border-red-500 bg-red-400 text-white cursor-pointer"
+              />
+            </div>
+            <div>
+              <input
+                placeholder="Enter your withdraw amount "
+                type="number"
+                name="number2"
+                id="withdraw"
+                class="w-[200px] h-[60px] border-2 border-red-500 placeholder:text-red-300 pl-[11px] focus:border-red-500 focus:outline-red-500 text-red-600"
+              />
+              <input
+                type="submit"
+                value="Withdraw"
+                id="withdrawBtn"
+                class="w-[100px] h-[50px] border-2 border-red-500 bg-red-400 text-white cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- link to js file -->
+    <script src="./index.js"></script>
+  </body>
+</html>
