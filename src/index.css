@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Rubik+Mono+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+.btn-primary {
+  @apply p-4 relative before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:transition-all duration-500 z-[1] before:-z-[1] before:hover:h-full;
+}
