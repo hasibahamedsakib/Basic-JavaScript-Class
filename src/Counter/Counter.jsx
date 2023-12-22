@@ -1,42 +1,37 @@
-import { useState } from "react";
+// import CountUp from "react-countup";
+
+import { useEffect, useState } from "react";
+
+// const Counter = () => {
+//   return (
+//     <div className="bg-slate-300 text-center">
+//       <CountUp start={100} end={1000} duration={5}>
+//         {({ countUpRef }) => (
+//           <div>
+//             <span
+//               ref={countUpRef}
+//               className="text-3xl font-semibold text-red-400 text-center"
+//             />
+//           </div>
+//         )}
+//       </CountUp>
+//     </div>
+//   );
+// };
+
+// export default Counter;
 
 const Counter = () => {
-  const [counter, setCounter] = useState(0);
-
-  //   setInterval(() => {
-
-  //   }, 1000);
-
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount((count) => count + 1);
+    }, 500);
+    return () => clearInterval(interval);
+  });
   return (
-    <div className="h-screen grid items-center justify-center">
-      <div>
-        <h1 className="text-3xl font-normal underline text-center text-purple font-Rubik">
-          Count : {counter}
-        </h1>
-
-        <div className="flex items-center justify-center gap-6 mt-10">
-          <button
-            disabled={counter >= 10 ? true : false}
-            to={"#"}
-            className="btn-primary bg-red-400  before:bg-orange-800 "
-            onClick={() => {
-              setCounter(counter + 1);
-            }}
-          >
-            Increase
-          </button>
-          <button
-            disabled={counter <= 0 ? true : false}
-            to={"#"}
-            className="btn-primary bg-amber-400 before:hover:bg-amber-600"
-            onClick={() => {
-              setCounter(counter - 1);
-            }}
-          >
-            Decress
-          </button>
-        </div>
-      </div>
+    <div className="bg-slate-300 text-center">
+      <h1 className="text-5xl text-center text-teal-500 relative z-10 before:absolute before:left-0 before:right-0 before:bg-gray-400 p-2 before:-z-10 before:w-full before:h-full"> {count}</h1>
     </div>
   );
 };

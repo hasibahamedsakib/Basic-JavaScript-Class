@@ -3,7 +3,17 @@
 // import Main from "./Main/Main";
 // import Navbar from "./Navbar/Navbar";
 
-import Counter from "./Counter/Counter";
+// import Progressbar from "./ProgressBar/ProgressBar";
+// import ProgressBar from "./ProgressBar/ProgressBar";
+// import KeenSlider2 from "./Slider/KeenSlider2";
+import Service from "./BlogSection/BlogSection";
+// import Counter from "./Counter/Counter";
+// import Navbar1 from "./Navbar/Navbar1";
+// import CardSliderCarousel from "./Slider/SlickSlider";
+
+// import CenterMode from "./Slider/Slider.jsx";
+
+// import Counter from "./Counter/Counter";
 
 const App = () => {
   return (
@@ -12,7 +22,13 @@ const App = () => {
       <Header></Header>
       <Main></Main>
       <Footer></Footer> */}
-      <Counter />
+      {/* <Counter /> */}
+
+      {/* <KeenSlider /> */}
+      {/* <KeenSlider2 /> */}
+      {/* <Progressbar /> */}
+      {/* <CardSliderCarousel /> */}
+      <Service />
     </>
   );
 };

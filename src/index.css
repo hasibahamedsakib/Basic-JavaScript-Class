@@ -1,10 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 
 @tailwind utilities;
 
-.btn-primary {
-  @apply p-4 relative before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:transition-all duration-500 z-[1] before:-z-[1] before:hover:h-full;
+.primary-btn {
+  @apply py-3 px-7 mt-4 font-Archivo bg-SecondaryColor-0 text-white uppercase  inline hover:text-SecondaryColor-0 relative z-[1] transition-all duration-500 before:absolute before:top-0 before:right-0 before:left-0 before:bottom-0 before:h-full before:w-full before:bg-white before:-z-[1] before:transition-all before:duration-500 before:scale-0 before:hover:scale-[1];
+}
+
+.primary-btn2 {
+  @apply py-2 px-5 md:py-3 md:px-7 mt-4 bg-[#F2F3F5] font-Archivo  uppercase text-[15px] sm:text-base md:text-lg inline transition-all 
+    duration-500 text-SecondaryColor-0 relative z-[1] before:absolute before:top-0 before:right-0   before:h-full before:w-0 before:-z-[1] before:transition-all before:duration-500 before:hover:bg-SecondaryColor-0 hover:text-white before:hover:w-full before:hover:left-0;
+}
+
+.Container {
+  @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1320px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
+}
+
+/* service card */
+
+.service-card-img {
+  @apply relative z-[1] before:absolute before:bottom-0 before:left-0 before:h-[0%] before:w-full before:bg-[#0A1028] before:opacity-40 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0;
+}
+
+.service-chair-outline {
+  @apply relative z-[1] after:absolute after:-left-[25px] after:-top-[26px] after:right-[0] after:bottom-[0px] after:w-[80px] after:h-[80px] after:rounded-full after:bg-SecondaryColor-0  after:scale-0 after:-z-[1] after:transition-all after:duration-500 group-hover:after:scale-[1];
 }
